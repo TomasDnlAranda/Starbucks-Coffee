@@ -8,3 +8,8 @@ this interface was achieved by:
 - CSS
 - TAIWLIND CSS
 - JS
+
+
+to be able to visualize the project in a better way:
+
+https://tomasdnlaranda.github.io/Starbucks-Coffee/
