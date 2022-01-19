@@ -2,7 +2,7 @@
 
 **Interface designed and developed by me, bringing the corporate identity of Starbucks Coffee to the internet**
 
-this interface was achieved by:
+_his interface was achieved by:_
 
 - HTML
 - CSS
@@ -11,6 +11,6 @@ this interface was achieved by:
 - TAIWLIND CSS
 - RESPONSIVE DESIGN 100%
 
-to be able to visualize the project in a better way:
+_to be able to visualize the project in a better way:_
 
 https://tomasdnlaranda.github.io/Starbucks-Coffee/
