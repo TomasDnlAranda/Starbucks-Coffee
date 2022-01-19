@@ -6,9 +6,10 @@ this interface was achieved by:
 
 - HTML
 - CSS
-- TAIWLIND CSS
 - JS
-
+- FLEXBOX
+- TAIWLIND CSS
+- RESPONSIVE DESIGN 100%
 
 to be able to visualize the project in a better way:
 
