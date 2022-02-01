@@ -5,30 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbucks</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- script cdn tailwind css -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+
+    <!-- link cdn bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    
+    <!-- link font family Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Poppins:wght@200;400;600&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    <!-- link CSS style -->
     <link rel="stylesheet" href="styles/style.css">
+    
 </head>
 <body>
-    <!-- container header & main -->
+
+
+    <!-- ===================== start container header & main area ========================= -->
     <div class="w-screen selection:bg-green-600 selection:text-white ">
-        <!-- circle right js -->
-        <div class="hidden xl:block xl:absolute xl:top-0 xl:left-0 xl:min-w-full xl:min-h-full xl:bg-green-600 circle" style="clip-path: circle(50% at right 750px);"></div>
-        <!-- header -->
+
+
+
+        <!-- ===================== start header area ========================= -->
         <header class="border-b-2 shadow-lg z-20 bg-white fixed top-0 left-0 right-0 w-screen selection:bg-green-600 selection:text-white">
             <nav class="flex ml-4 sm:ml-5 lg:ml-10 xl:ml-20">
-                <!-- logo header -->
                 <div class="my-2">
                     <img src="./img/logo.png" alt="logo-starbucks" class="h-10 sm:h-16 lg:h-18 xl:h-20">
                 </div>
-                <!-- icons more -->
                 <div class="grow flex justify-end items-center pr-4 sm:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
                     </svg>
                 </div>
-                <!-- navbar options -->
                 <ul class="grow sm:flex items-center justify-end sm:mr-5 sm:text-xs md:text-sm lg:text-base xl:text-base tracking-widest font-black font-normal font-['Poppins'] hidden lg:mr-10 xl:mr-20 selection:bg-green-600 selection:text-white ">
                     <li class="sm:mx-3 md:mx-4"><a href="#" class="hover:text-green-600 hover:text-dark">Cafe</a></li>
                     <li class="sm:mx-3 md:mx-4"><a href="#" class="hover:text-green-600 hover:text-dark">Menu</a></li>
@@ -40,10 +49,14 @@
                 </ul>
             </nav>
         </header>
-        <!-- main -->
+        <!-- ===================== end header area ========================= -->
+
+
+
+        <!-- ===================== start main area ========================= -->
+        <div class="hidden xl:block xl:absolute xl:top-0 xl:left-0 xl:min-w-full xl:min-h-full xl:bg-green-600 circle" style="clip-path: circle(50% at right 750px);"></div>
         <div class="flex mt-24">
             <main class="xl:w-3/6 flex flex-col items-start">
-                <!-- title main -->
                 <div class="font-semibold text-6xl ml-2 flex font-['Poppins'] mb-10 sm:text-7xl md:text-8xl lg:mt-20 md:ml-10 xl:text-7xl 2xl:text-8xl xl:ml-20 xl:mt-10 2xl:ml-20 2xl:mt-20 selection:bg-green-600 selection:text-white ">
                     <span > No solo es
                         <br class="sm:hidden md:block lg:hidden xl:block 2xl:block selection:bg-green-600 selection:text-white ">Cafe 
@@ -51,12 +64,9 @@
                         <br class="hidden 2xl:block" >
                         <span class="text-green-600 font-black text-6xl sm:text-8xl md:text-10xl xl:text-8xl 2xl:text-9xl">Starbucks</span>
                     </span>
-                </div> 
-                <!-- paragraph main -->
+                </div>
                 <p class="font-['Poppins'] font-semibold hidden lg:block mx-10 text-lg text-gray-700 mt-10 xl:ml-20 xl:mt-0 2xl:hidden selection:bg-green-600 selection:text-white ">Cada día, acudimos a trabajar con la esperanza de conseguir dos cosas: compartir el mejor café con nuestros amigos y contribuir a que el mundo sea un poco mejor. Así era cuando abrió la primera tienda Starbucks en 1971, y así continúa siendo hoy.</p>
-                <!-- btn main -->
                 <button class="font-['Poppins'] lg:px-28 font-bold hidden lg:block rounded-full text-white bg-green-600 px-16 py-5 text-xl ml-10 xl:mt-10 hover:bg-green-700 xl:ml-20 xl:px-7 xl:py-3 lg:mt-10 xl:mt-6 2xl:hidden selection:bg-green-400 selection:text-white ">Leer Mas</button>
-                <!-- cups -->
                 <ul class="hidden xl:flex xl:mt-8 pb-1 w-screen pl-10 2xl:pl-28 2xl:mt-10 selection:bg-green-400 selection:text-white ">
                     <li class="xl:mx-1 2xl:mx-2 hover:-translate-y-4 hover:transition-transform"><img src="./img/thumb1.png" alt="imagen-onclick" class=" xl:h-28" onclick="imgSlider(`./img/img1.png`); changeCircleColor(`#017143`)"></li>
                     <li class="xl:mx-1 2xl:mx-2 hover:-translate-y-4 hover:transition-transform"><img src="./img/thumb2.png" alt="imagen-onclick" class=" xl:h-28" onclick="imgSlider(`./img/img2.png`); changeCircleColor(`#eb7495`)"></li>
@@ -68,10 +78,8 @@
                     <li class="xl:mx-2 2xl:mx-3 hover:-translate-y-4 hover:transition-transform"><img src="./img/Starbucks-Coffee.png" alt="imagen-onclick" class=" xl:h-28" onclick="imgSlider(`./img/Starbucks-Coffee.png`); changeCircleColor(`#D2B48C`)"></li>
                 </ul>
             </main>
-            <!-- container cups big -->
             <div class="hidden xl:flex xl:w-3/6 justify-center z-10 justify-between">
                 <img src="./img/img1.png" alt="imagen-transformacion" class="mt-16 mr-10 2xl:ml-72 ml-24">
-                <!-- social -->
                 <div class="icons-redes hidden xl:flex flex-col justify-center 2xl:hidden mr-20">
                     <a href="#" class="ml-3 text-3xl my-5 mt-16 text-white hover:text-gray-300"><i class="bi bi-facebook"></i></a>
                     <a href="#" class="ml-3 text-2xl my-5 text-white hover:text-gray-300"><i class="bi bi-instagram"></i></a>
@@ -80,30 +88,34 @@
                 </div>
             </div>
         </div>
+        <!-- ===================== end main area ========================= -->
+
+
+
     </div>
-    <!-- section img -->
+    <!-- ===================== end container header & main area ========================= -->
+
+
+
+
+    <!-- ===================== start section gallery area ========================= -->
     <div class="section-img w-full px-5">
-        <!-- contenedor img 1 & 2 -->
         <div class="contenedor lg:mt-20 selection:bg-green-600 selection:text-white flex">
             <img src="./img/s-ratanak-aScuVWpmDcQ-unsplash.jpg" alt="section-img-starbucks" class="sm:w-3/6 border-white border-t-8">
             <img src="./img/gema-saputera-7Gm1Jwt1uYA-unsplash.jpg" alt="section-img-starbucks"  class="sm:w-3/6 sm:block border-l-8 border-white border-t-8 hidden">
         </div>
-        <!-- contenedor img 3 -->
         <div class="contenedor">
             <img src="./img/Untitled design (1).png" alt="section-img-starbucks" class="border-y-8 border-white">
         </div>
     </div>
-    <!-- section cards -->
     <div class="cards-container flex font-['Poppins'] selection:bg-green-600 selection:text-white ">
         <div class="bg-green-800 w-full mt-10 flex flex-wrap justify-around">
-            <!-- card 1 -->
             <div class="w-4/6 sm:max-w-max sm:mx-5 bg-white mt-10 mb-10 shadow-2xl shadow-slate-900 flex flex-col sm:bg-white sm:mt-10 sm:mb-10 sm:shadow-2xl sm:shadow-slate-900 sm:flex sm:flex-col">
                 <img src="img/Order-Ahead-Hero-Image-C06-RESIZED.jpg" alt="">
                 <h3 class="text-2xl ml-5 my-3 sm:text-3xl sm:flex sm:justify-center sm:my-5" ><span>Aplicación de <span class="sm:text-green-600 sm:font-black text-green-600 font-black">Starbucks</span></span></h3>
                 <p class="sm:ml-5 sm:text-gray-900 text-xs ml-5 mr-2 text-gray-900">Ahorre tiempo con Click & Collect y recolecte sus estrellas <i class="bi bi-star-fill sm:text-yellow-500 text-yellow-500"></i> <br>Hacer pedidos nunca ha sido tan fácil.</p>
                 <button class="text-sm sm:rounded-full sm:w-min sm:px-5 sm:py-2 sm:my-5 sm:ml-5 sm:text-xl sm:bg-green-600 sm:text-white rounded-full w-min px-5 py-2 my-5 ml-5 bg-green-600 text-white hover:bg-green-700">Pruebelo</button>
             </div>
-            <!-- card 2 -->
             <div class="w-4/6 sm:max-w-max sm:mx-5 sm:bg-white sm:mt-10 sm:mb-10 sm:shadow-2xl sm:shadow-slate-900 sm:flex sm:flex-col bg-white mt-10 mb-10 shadow-2xl shadow-slate-900 flex flex-col">
                 <img src="img/SBX Delivers Generic-Handoff_SO 560x321px.jpg.jpeg" alt="">
                 <h3 class="sm:text-3xl sm:flex sm:justify-center my-4 text-2xl mx-5" >
@@ -118,7 +130,6 @@
                     <li class="sm:rounded-full sm:w-max sm:px-5 sm:py-2 sm:my-5 sm:text-lg sm:bg-green-600 sm:text-white rounded-full w-max mx-2 px-4 py-2 my-2 text-sm bg-green-600 text-white hover:bg-green-700"><a href=""><span>Entrega por</span><span class="sm:text-yellow-500 text-yellow-500"> PedidosYa</span></a></li>
                 </ul>
             </div>
-            <!-- card 3 -->
             <div class="card sm:max-w-max sm:mx-5 sm:bg-white sm:mt-10 sm:mb-10 sm:shadow-2xl sm:shadow-slate-900 sm:flex sm:flex-col w-4/6 bg-white mt-10 mb-10 shadow-2xl shadow-slate-900 flex flex-col">
                 <img src="img/Starbucks-Stories-Card-Image-C06-RESIZED.jpg.jpeg" alt="">
                 <h3 class="text-2xl flex mx-5 justify-center my-2 sm:text-3xl sm:flex sm:justify-center sm:my-5" ><span>Novedades <span class="text-green-600 font-black sm:text-green-600 sm:font-black">Starbucks</span></span></h3>
@@ -126,7 +137,6 @@
                     novedades y actualizaciones.</p>
                 <button class="sm:rounded-full sm:w-max sm:px-5 sm:py-2 sm:my-5 sm:ml-5 sm:text-xl sm:bg-green-600 sm:text-white rounded-full w-max px-5 py-2 my-5 ml-5 text-sm bg-green-600 text-white hover:bg-green-700">Mas Informacion</button>
             </div>
-            <!-- card 4 -->
             <div class="card w-4/6 sm:max-w-max sm:mx-5 bg-white mt-10 mb-10 shadow-2xl shadow-slate-900 flex flex-col sm:bg-white sm:mt-10 sm:mb-10 sm:shadow-2xl sm:shadow-slate-900 sm:flex sm:flex-col">
                 <img src="img/About-Us-Card-Image-C06-RESIZED (2)_0.jpg.jpeg" alt="">
                 <h3 class="sm:text-3xl flex justify-center sm:my-5 text-2xl mx-5 my-5" ><span>Historias de <span class="text-green-600 font-black sm:text-green-600 sm:font-black">Starbucks</span></span></h3>
@@ -135,18 +145,24 @@
             </div>
         </div>
     </div>
-    <!-- section jobs -->
+    <!-- ===================== end section gallery area ========================= -->
+
+
+
+    <!-- ===================== start section jobs area ========================= -->
     <div class="flex w-full flex-col justify-center font-['Poppins'] font-bold selection:bg-green-600 selection:text-white ">
-        <!-- contenedor img jobs -->
         <div class="contenedor mt-8">
             <img src="./img/Fartuch_LP_final.jpg.jpeg" alt="" class="w-full">
         </div>
-        <!-- text jobs -->
         <h3 class="ml-2 mx-auto my-5 text-2xl font-extrabold sm:w-4/6 sm:text-4xl md:text-6xl md:ml-5 lg:text-7xl lg:ml-10 lg:my-10 xl:text-8xl xl:ml-14"><span> Encuentre su camino en <span class="text-green-600 text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl">Starbucks</span></span></h3>
         <p class="ml-2 text-sm text-gray-700 sm:text-base md:text-lg md:ml-5 lg:text-xl lg:ml-10 xl:ml-14">Si quieres saber más sobre nuestros puestos, descubre cuáles son.</p>
         <button class="bg-green-600 text-white my-5 max-w-max mx-auto rounded-full py-1 px-6 hover:bg-green-700 sm:text-lg md:text-xl lg:py-3 lg:px-20 lg:mx-10 lg:my-10 xl:ml-14 xl:text-xl transition">Descubre</button>
     </div>
-    <!-- footer -->
+    <!-- ===================== end section jobs area ========================= -->
+
+
+
+    <!-- ===================== start footer area ========================= -->
     <footer class="bg-black text-white font-['Poppins'] mt-3 pt-3 selection:bg-green-600 selection:text-white ">
         <div class="flex flex-wrap justify-center xl:mx-5">
             <a href="#" class="text-2xl my-5 bg-green-600 hover:text-gray-300 rounded-full px-2 py-1 md:text-3xl xl:px-3 xl:py-2 xl:text-4xl xl:mx-5"><i class="bi bi-facebook"></i></a>
@@ -180,7 +196,16 @@
             <p class="text-sm mx-2 pb-5 sm:text-sm"><span> Hecho por <span class="text-green-600">Tomas Aranda</span> con <i class="bi bi-heart-fill text-green-600"></i> logrado con <span class="text-[#38BDF8]"><a href="https://tailwindcss.com/" target="blank">Tailwind CSS</a></span></span></p>
         </div>
     </footer>
+    <!-- ===================== end footer area ========================= -->
+
+
+
+<!-- script JS -->
 <script src="./styles/app.js"></script>
+
+<!-- script cdn taiwlind css -->
 <script src="https://cdn.tailwindcss.com"></script>
+
+
 </body>
 </html>
